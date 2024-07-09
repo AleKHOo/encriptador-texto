@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: content-box;
+    background-color: #CDE8E5;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: #0A3871;
+}
+
+.contenido {
+    background-color: #CDE8E5;
+    display: flex;
+    gap: 2em;
+    box-sizing: border-box;
+}
+
+/*Division del logo */
+
+.logo {
+    background-color: #CDE8E5;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+}
+
+.logo__alura {
+    width: 120px;
+    height: 48px;
+    margin: 2em;
+}
+
+/*Division de la entrada del texto a encriptar*/
+
+.entrada {
+    background-color: #CDE8E5;
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    padding: 2em;
+}
+
+#entradaTexto {
+    background-color: #CDE8E5;
+    margin: 0 0 0 20%;
+    padding: 1em;
+    height: 50%;
+    width: 70%;
+    resize: vertical;
+    border: none;
+    outline: none;
+    font-size: 24px;
+}
+
+.advertencia {
+    display: flex;
+    height: 2%;
+    margin: 2em 2em 1em 20%;
+    gap: .8em;
+    color: #4D869C;
+}
+
+.gato__icon {
+    width: 16px;
+    height: 16px;
+}
+
+.msj__adv {
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.btn_posicion{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    height: 8%;
+    margin: 0 2em 0 20%;
+}
+
+.btn__encriptar, .btn__desencriptar {
+    width: auto;
+    border: none;
+    border-radius: 1em;
+    background-color: #4D869C;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 2% 15% ;
+}
+
+/*Division de la salida del texto encriptado*/
+
+.salida__encrpit {
+    background-color: #EEF7FF;
+    margin: 3em 1em 0 0;
+    width: 25%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: baseline;
+    align-items: center;
+    gap: 5%;
+    padding: 1em;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.gato__lupa {
+    width: 100%;
+    height: 336px;
+}
+
+.msj1 {
+    margin: 1em 0 0 0;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.msj2 {
+    margin: 1em 0 0 0;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/*Resultado del texto*/
+
+#salidaTexto {
+    background-color: #EEF7FF;
+    outline: none;
+    border: none;
+    resize: vertical;
+    width: 300px;
+    height: 500px;
+    vertical-align: bottom;
+    text-align: start;
+    text-wrap: wrap;
+    font-size: 18px;
+}
+
+.btn__copiar{
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    background-color: #4D869C;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 3em;
+}
+/*Tablet*/
+@media screen and (max-width: 820px) {
+    .contenido {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        vertical-align: bottom;
+    }
+    .entrada {
+        width: 100%;
+        padding: 2em 0 .5 0;
+    }
+    .logo__alura {
+        margin: 0;
+    }
+    #entradaTexto {
+        margin: 0;
+        height: 20em;
+        font-size: 24px;
+    }
+    .advertencia {
+        width: 90%;
+        margin-left: 1.5em;
+    }
+
+    .btn_posicion {
+        height: 4em;
+        width: 90%;
+        margin: 0 1.5em 0 1.5em;
+        vertical-align: middle;
+        justify-content: center;
+    }
+
+    .btn__desencriptar, .btn__encriptar {
+        height: 100%;
+        width: 100%;
+    }
+
+    .salida__encrpit{
+        height: auto;
+        width: 90%;
+        margin: 0;
+    }
+
+    .gato__lupa{
+        display: none;
+    }
+
+    #salidaTexto {
+        height: auto;
+        width: 100%;
+        font-size: 16px;
+    }
+    .btn__copiar {
+        margin: .5em 0 0 0;
+        width: 100%;
+    }
+}
+
+/*Celular*/
+@media screen and (max-width: 400px) {
+    .contenido {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        vertical-align: bottom;
+    }
+    .entrada {
+        width: 100%;
+        padding: 2em 0 .5 0;
+    }
+    .logo__alura {
+        margin: 0;
+    }
+    #entradaTexto {
+        margin: 0;
+        height: 20em;
+        font-size: 14px;
+        margin-top: 1em;
+    }
+    .advertencia {
+        width: 90%;
+        margin-left: 1.5em;
+        margin-bottom: 3.5em;
+        font-size: 8px;
+    }
+    .msj__adv {
+        font-size: 10px;
+    }
+
+    .btn_posicion {
+        height: 3em;
+        width: 100%;
+        margin: 0;
+        gap: 1em;
+        flex-direction: column;
+        vertical-align: middle;
+        justify-content: center;
+    }
+
+    .btn__desencriptar, .btn__encriptar {
+        height: 2em;
+        width: 90%;
+        padding: .8 0;
+    }
+
+    .salida__encrpit{
+        height: auto;
+        width: 70%;
+        margin: 0;
+    }
+
+    .gato__lupa{
+        display: none;
+    }
+
+    #salidaTexto {
+        height: auto;
+        width: auto;
+        font-size: 16px;
+        text-wrap: wrap;
+    }
+    .btn__copiar {
+        margin: .5em 0 0 0;
+        width: 100%;
+    }
+}

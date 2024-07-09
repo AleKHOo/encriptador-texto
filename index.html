@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptación de texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="website icon" type="jpg" href="./assets/gato-icon.jpg">
+</head>
+
+<body>
+    <main class="contenido">
+        <section class="entrada">
+            <img class="logo__alura" src="./assets/logo-alura.png" alt="Logo de Alura">
+            <textarea id="entradaTexto" placeholder="Ingrese el texto aquí."></textarea>
+            <div class="advertencia">
+                <img class="gato__icon" src="./assets/advertencia-icon.png" alt="Icono de advertencia de gato">
+                <p class="msj__adv">Sólo letras minúsculas y sin acentos.</p>
+            </div>
+            <div class="btn_posicion">
+                <button onclick="encriptarTexto();" class="btn__encriptar" >Encriptar</button>
+                <button onclick="desencriptarTexto();" class="btn__desencriptar" >Desencriptar</button>
+            </div>
+        </section>
+        <section class="salida__encrpit">
+            
+            <div id="textoEncriptado" hidden>
+                <textarea id="salidaTexto" readonly placeholder="Ingresa el texto que desees encriptar o desencriptar."></textarea>
+                <button class="btn__copiar" onclick="copiarTexto();" >Copiar</button>
+            </div>
+
+            <div id="avisoMsj">
+                <img class="gato__lupa" src="./assets/gato-lupa.png" alt="Gatito con una lupa">
+                <p class="msj1">Ningún mensaje fue encontrado</p>
+                <p class="msj2">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
